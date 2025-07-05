@@ -5,7 +5,11 @@ const newsRouter = require('../src/routers/news');
 const marketRouter = require('../src/routers/market-analysis');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/news', newsRouter);            
