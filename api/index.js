@@ -6,7 +6,7 @@ const marketRouter = require('../src/routers/market-analysis');
 
 const app = express();
 app.use(cors({
-  origin: 'https://envest-frontend-1brirojs-...vercel.app',
+  origin: 'https://envest-frontend-1brirojsk-jaasirs-projects.vercel.app/',
   credentials: true
 }));
 
