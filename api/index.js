@@ -2,8 +2,8 @@
 const express = require('express');
 const cors = require('cors');
 
-const newsRouter   = require('../routers/news');
-const marketRouter = require('../routers/market-analysis');
+const newsRouter   = require('../src/routers/news');
+const marketRouter = require('../src/routers/market-analysis');
 
 const app = express();
 app.use(cors());
