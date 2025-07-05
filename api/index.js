@@ -11,8 +11,12 @@ app.use(express.json());
 app.use('/news', newsRouter);            
 app.use('/market-analysis', marketRouter);
 
+app.get('/', (req, res) => {
+  res.json({ message: 'API is working!' });
+});
+
 if (require.main === module) {
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 5000;
   app.listen(port, () => console.log(`Local server on ${port}`));
 }
 
