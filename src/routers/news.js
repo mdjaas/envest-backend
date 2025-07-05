@@ -4,7 +4,7 @@ const News = require('../scrappers/stock-news');
 
 const router = new express.Router();
 
-router.get('/news', async (req, res) => {
+router.get('/', async (req, res) => {
     try{
         const news = await News();
         res.send(news);

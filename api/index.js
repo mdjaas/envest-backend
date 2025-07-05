@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/news', newsRouter);               // ✅ Mount at correct path
+app.use('/news', newsRouter);            
 app.use('/market-analysis', marketRouter);
 
 if (require.main === module) {

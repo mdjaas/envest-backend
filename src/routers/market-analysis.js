@@ -8,7 +8,7 @@ const router = new express.Router();
 /*  POST /market-analysis   body = [{ headline, ... }, ...]           */
 /*  Returns { sentiment: ["Positive", "Neutral", ...] }               */
 /* ------------------------------------------------------------------ */
-router.post("/market-analysis", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const newsItems = req.body;
 
